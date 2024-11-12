@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import AddTask from '@/views/AddTask.vue';
+import TaskList from '@/views/TaskList.vue';
 // Importa los otros componentes en esta sección
 
 Vue.use(VueRouter);
@@ -28,6 +29,10 @@ const routes = [
   },
 
   // Las demás rutas deben ir aquí también
+  {
+    path:'/TaskList',
+    component: TaskList
+  }
 ];
 
 const router = new VueRouter({
